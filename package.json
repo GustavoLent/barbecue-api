@@ -5,8 +5,14 @@
     "type": "module",
     "dependencies": {
         "axios": "^0.22.0",
+        "cors": "^2.8.5",
         "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "helmet": "^4.6.0",
         "jest": "^27.2.4",
         "parcel": "^2.0.0-rc.0"
+    },
+    "devDependencies": {
+        "supertest": "^6.1.6"
     }
 }

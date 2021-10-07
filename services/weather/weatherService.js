@@ -2,10 +2,6 @@ import axios from "axios"
 import WeatherModel from "./weatherModel.js"
 
 export default class WeatherService {
-    constructor() {
-        this.weatherAPIKey = process.env.WEATHER_API_KEY
-    }
-
     async getWeatherData(city) {
         const requestData = await this._requestWeatherData(city)
 
@@ -23,10 +19,13 @@ export default class WeatherService {
     }
 
     async _requestWeatherData(city) {
-        const { weatherAPIKey } = this
+        const weatherAPIKey = process.env.WEATHER_API_KEY
+
+        if (!weatherAPIKey) {
+            throw new Error('Undefined weather api key.')
+        }
 
         const url = `http://api.weatherstack.com/current?access_key=${weatherAPIKey}&query=${city}`
-        console.log('will request the url: ' + url)
 
         const res = await axios.get(url)
 

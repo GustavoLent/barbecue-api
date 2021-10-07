@@ -1,15 +1,7 @@
-import dotenv from 'dotenv'
-dotenv.config()
+import app from './app.js'
 
-import WeatherService from "./services/weather/weatherService.js";
-import BarbecueService from "./services/barbecue/barbecueService.js";
+const port = process.env.PORT
 
-const weather = new WeatherService()
-const barbecueService = new BarbecueService()
-
-const moscowRec = await barbecueService.getBarbecueRecomendation('Moscow')
-const jagRec = await barbecueService.getBarbecueRecomendation('Jaguariuna')
-
-console.log(moscowRec)
-console.log(jagRec)
-
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+});

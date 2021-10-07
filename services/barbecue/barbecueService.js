@@ -13,14 +13,16 @@ export default class BarbecueService {
             const wheaterData = await weatherService.getWeatherData(city)
 
             const recomendation = this.getBarbecueRecomendationByCityWeather(wheaterData)
-            return recomendation
+            wheaterData.barbecueRecommendation = recomendation
+
+            return wheaterData
         } catch (error) {
             console.log(error)
             return "Enjoy!"
         }
     }
 
-    async getBarbecueRecomendationByCityWeather(cityWheater) {
+    getBarbecueRecomendationByCityWeather(cityWheater) {
         const code = cityWheater.weatherCode
         const recomendation = getBarbecueRecommendation(code)
 
