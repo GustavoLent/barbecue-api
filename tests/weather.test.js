@@ -4,9 +4,7 @@ import testsData from "./testsData";
 import WeatherModel from "../services/weather/weatherModel";
 
 const weather = new WeatherService()
-const mockedCity = testsData.mockedCity
-const requestResponse = testsData.requestResponse
-const parsedRequestResponse = testsData.parsedRequestResponse
+const { mockedCity, requestResponse, wheaterData } = testsData
 
 test('validate request response', async () => {
     const mockRequest = jest.fn();
@@ -15,7 +13,7 @@ test('validate request response', async () => {
 
     const res = await weather.getWeatherData(mockedCity)
 
-    expect(res).toEqual(parsedRequestResponse);
+    expect(res).toEqual(wheaterData);
 
     mockRequest.mockRestore()
 });

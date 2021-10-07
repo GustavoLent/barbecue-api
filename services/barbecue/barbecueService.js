@@ -1,4 +1,5 @@
 import WeatherService from "../weather/weatherService.js";
+import BarbecueResponseModel from "./barbecueResponseModel.js";
 import getBarbecueRecommendation from "./getBarbecueRecommendation.js";
 
 export default class BarbecueService {
@@ -13,12 +14,12 @@ export default class BarbecueService {
             const wheaterData = await weatherService.getWeatherData(city)
 
             const recomendation = this.getBarbecueRecomendationByCityWeather(wheaterData)
-            wheaterData.barbecueRecommendation = recomendation
+            const response = new BarbecueResponseModel(wheaterData, recomendation)
 
-            return wheaterData
+            return response
         } catch (error) {
             console.log(error)
-            return "Enjoy!"
+            return null
         }
     }
 

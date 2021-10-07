@@ -1,3 +1,4 @@
+import BarbecueResponseModel from "../services/barbecue/barbecueResponseModel";
 import getRecommendation from "../services/barbecue/getBarbecueRecommendation";
 import WeatherModel from "../services/weather/weatherModel";
 
@@ -53,8 +54,9 @@ const weatherCode = requestResponse.current.weather_code
 const weatherDescription = requestResponse.current.weather_descriptions[0]
 const iconUrl = requestResponse.current.weather_icons[0]
 
-const parsedRequestResponse = new WeatherModel(country, region, localtime, temperature, weatherCode, weatherDescription, iconUrl)
+const wheaterData = new WeatherModel(country, region, localtime, temperature, weatherCode, weatherDescription, iconUrl)
 
 const barbecueRecommendation = getRecommendation(weather_code)
+const barbecueResponse = new BarbecueResponseModel(wheaterData, barbecueRecommendation)
 
-export default { mockedCity, requestResponse, parsedRequestResponse, barbecueRecommendation }
+export default { mockedCity, requestResponse, wheaterData, barbecueRecommendation, barbecueResponse }
