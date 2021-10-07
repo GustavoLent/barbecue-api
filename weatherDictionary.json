@@ -1,0 +1,194 @@
+[
+    {
+        "code": 395,
+        "description": "Moderate or heavy snow in area with thunder"
+    },
+    {
+        "code": 392,
+        "description": "Patchy light snow in area with thunder"
+    },
+    {
+        "code": 389,
+        "description": "Moderate or heavy rain in area with thunder"
+    },
+    {
+        "code": 386,
+        "description": "Patchy light rain in area with thunder"
+    },
+    {
+        "code": 377,
+        "description": "Moderate or heavy showers of ice pellets"
+    },
+    {
+        "code": 374,
+        "description": "Light showers of ice pellets"
+    },
+    {
+        "code": 371,
+        "description": "Moderate or heavy snow showers"
+    },
+    {
+        "code": 368,
+        "description": "Light snow showers"
+    },
+    {
+        "code": 365,
+        "description": "Moderate or heavy sleet showers"
+    },
+    {
+        "code": 362,
+        "description": "Light sleet showers"
+    },
+    {
+        "code": 359,
+        "description": "Torrential rain shower"
+    },
+    {
+        "code": 356,
+        "description": "Moderate or heavy rain showers"
+    },
+    {
+        "code": 353,
+        "description": "Light rain shower"
+    },
+    {
+        "code": 350,
+        "description": "Ice pellets"
+    },
+    {
+        "code": 338,
+        "description": "Heavy snow"
+    },
+    {
+        "code": 335,
+        "description": "Patchy heavy snow"
+    },
+    {
+        "code": 332,
+        "description": "Moderate snow"
+    },
+    {
+        "code": 329,
+        "description": "Patchy moderate snow"
+    },
+    {
+        "code": 326,
+        "description": "Light snow"
+    },
+    {
+        "code": 323,
+        "description": "Patchy light snow"
+    },
+    {
+        "code": 320,
+        "description": "Moderate or heavy sleet"
+    },
+    {
+        "code": 317,
+        "description": "Light sleet"
+    },
+    {
+        "code": 314,
+        "description": "Moderate or heavy freezing rain"
+    },
+    {
+        "code": 311,
+        "description": "Light freezing rain"
+    },
+    {
+        "code": 308,
+        "description": "Heavy rain"
+    },
+    {
+        "code": 305,
+        "description": "Heavy rain at times"
+    },
+    {
+        "code": 302,
+        "description": "Moderate rain"
+    },
+    {
+        "code": 299,
+        "description": "Moderate rain at times"
+    },
+    {
+        "code": 296,
+        "description": "Light rain"
+    },
+    {
+        "code": 293,
+        "description": "Patchy light rain"
+    },
+    {
+        "code": 284,
+        "description": "Heavy freezing drizzle"
+    },
+    {
+        "code": 281,
+        "description": "Freezing drizzle"
+    },
+    {
+        "code": 266,
+        "description": "Light drizzle"
+    },
+    {
+        "code": 263,
+        "description": "Patchy light drizzle"
+    },
+    {
+        "code": 260,
+        "description": "Freezing fog"
+    },
+    {
+        "code": 248,
+        "description": "Fog"
+    },
+    {
+        "code": 230,
+        "description": "Blizzard"
+    },
+    {
+        "code": 227,
+        "description": "Blowing snow"
+    },
+    {
+        "code": 200,
+        "description": "Thundery outbreaks nearby"
+    },
+    {
+        "code": 185,
+        "description": "Patchy freezing drizzle nearby"
+    },
+    {
+        "code": 182,
+        "description": "Patchy sleet nearby"
+    },
+    {
+        "code": 179,
+        "description": "Patchy snow nearby"
+    },
+    {
+        "code": 176,
+        "description": "Patchy rain nearby"
+    },
+    {
+        "code": 143,
+        "description": "Mist"
+    },
+    {
+        "code": 122,
+        "description": "Overcast"
+    },
+    {
+        "code": 119,
+        "description": "Cloudy"
+    },
+    {
+        "code": 116,
+        "description": "Partly Cloudy"
+    },
+    {
+        "code": 113,
+        "description": "Clear/Sunny"
+    }
+]
